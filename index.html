@@ -1,38 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>My Website</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Mine of Jas">
+  <title>The Mine of Jas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <link rel="stylesheet" href="https://themineofjas.github.io/style.css?v=2">
-  </head>
-
-  <body>
-    <header>
-    <h1><a href="/">the MINE of JAS</a></h1>
-
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a href="./index.html" aria-current="page">Home</a>
+      <a href="#about">About</a>
+      <a href="#archive">Archive</a>
     </nav>
+
+    <div class="masthead">
+      <p class="eyebrow">Lorem ipsum dolor sit amet</p>
+      <h1>The Mine of Jas</h1>
+      <p class="tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Latest Writing</h2>
-      
-            <article> 
-            <h3><a href="/first-article.html">First Article</a></h3>
-      
-            </article>
-            </section>
+  <main id="main" tabindex="-1">
+    <section class="posts" aria-label="Recent writing">
+      <article id="post-one" class="post-preview">
+        <p class="post-date">
+          <time datetime="2026-10-12">October 12, 2026</time>
+        </p>
+        <h2>Post Title One</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </article>
+
+      <article id="post-two" class="post-preview">
+        <p class="post-date">
+          <time datetime="2026-10-05">October 5, 2026</time>
+        </p>
+        <h2>Post Title Two</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </article>
+    </section>
+
+    <section id="about" class="end-section" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </section>
+
+    <section id="archive" class="end-section" aria-labelledby="archive-title">
+      <h2 id="archive-title">Archive</h2>
+      <ul class="archive-list">
+        <li>
+          <a href="#post-one">Post Title One</a>
+          <span>October 12, 2026</span>
+        </li>
+        <li>
+          <a href="#post-two">Post Title Two</a>
+          <span>October 5, 2026</span>
+        </li>
+      </ul>
+    </section>
   </main>
 
-     <footer>
-            <p>© the MINE of JAS</p>
-    </footer>
-  
-  </body>
-  </html>
+  <footer class="site-footer">
+    <p>Lorem ipsum dolor sit amet.</p>
+  </footer>
+</body>
+</html>
